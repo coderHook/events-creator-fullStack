@@ -1,7 +1,9 @@
 import request from 'superagent'
 
 export const EVENTS_FETCHED = 'EVENTS_FETCHED'
+export const EVENT_FETCHED = 'EVENT_FETCHED'
 export const EVENT_CREATE_SUCCESS = 'EVENT_CREATE_SUCCESS'
+export const EVENT_DELETE_SUCCESS = 'EVENT_DELETE_SUCCESS'
 
 const baseUrl = 'http://localhost:4000'
 
@@ -13,6 +15,16 @@ const eventsFetched = events => ({
 const eventCreateSuccess = event => ({
   type: EVENT_CREATE_SUCCESS,
   event
+})
+
+const eventFetched = event => ({
+  type: EVENT_FETCHED,
+  event
+})
+
+const eventDelete = event => ({
+  type: EVENT_DELETE_SUCCESS,
+  payload: event
 })
 
 export const loadEvents = () => (dispatch, getState) => {
@@ -35,6 +47,26 @@ export const createEvent = (data) => dispatch => {
     .send(data)
     .then(response => {
       dispatch(eventCreateSuccess(response.body))
+    })
+    .catch(console.error)
+}
+
+export const loadEvent = (id) => (dispatch) => {
+  // a GET /events request
+  request(`${baseUrl}/events/${id}`)
+    .then(response => {
+      // dispatch an EVENT_FETCHED action that contains the events
+      console.log('eventDispatch', response.body)
+      dispatch(eventFetched(response.body))
+    })
+    .catch(console.error)
+}
+
+export const deleteEvent = (id) => (dispatch) => {
+  request
+    .delete(`${baseUrl}/events/${id}`)
+    .then(response => {
+      console.log('deleteEvent', response.body)
     })
     .catch(console.error)
 }

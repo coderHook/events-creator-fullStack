@@ -7,34 +7,16 @@
       "description": "This is the best demo night you have ever seen. It's a-m-a-z-i-n-g. Seriously. Lets make a dent in the universe."
     },
     {
-      "id": 2,
-      "name": "WWDC: iPhone XXL keynote",
-      "date": "04-08-2020",
-      "description": "The best iPhone we've build so far. For realz this time. "
-    },
-    {
       "id": 3,
       "name": "Cat-cuddling world record",
       "date": "09-09-2021",
       "description": "Can we has cheaseburgerz?"
     },
     {
-      "id": 4,
-      "name": "Fake-sleep meetup",
-      "date": "01-02-2022",
-      "description": "This is a short, simple and meaningful meetup for people that casually like to fake-sleep."
-    },
-    {
       "id": 5,
       "name": "New Years Eve",
       "date": "31-12-2022",
       "description": "It's going to be wait for it."
-    },
-    {
-      "name": "asda",
-      "date": "asda",
-      "description": "asdad",
-      "id": 6
     },
     {
       "name": "Pedro",
@@ -81,12 +63,6 @@
       "eventId": 1
     },
     {
-      "id": 2,
-      "author": "Suzan",
-      "body": "Some people come into our lives and leave footprints on our hearts, while others come into our lives and make us wanna leave footprints on their face.",
-      "eventId": 2
-    },
-    {
       "id": 3,
       "author": "Billy",
       "body": "I'm always relieved when someone is delivering a eulogy and I realise I'm listening to it.",
@@ -105,12 +81,6 @@
       "eventId": 3
     },
     {
-      "id": 6,
-      "author": "Anne",
-      "body": "I saw six men kicking and punching the mother-in-law. My neighbor said “Are you going to help?” I said, “No, Six should be enough.”",
-      "eventId": 2
-    },
-    {
       "id": 7,
       "author": "Leon",
       "body": "People always told me be careful of what you do And dont go around breaking young girls' hearts And mother always told me be careful of who you love And be careful of what you do cause the lie becomes the truth.",
@@ -127,12 +97,6 @@
       "author": "Yke",
       "body": "If I roll once and you roll twice. What does that mean?",
       "eventId": 3
-    },
-    {
-      "id": 10,
-      "author": "Xander",
-      "body": "I like to say things twice, say things twice. It can get annoying though, annoying though.",
-      "eventId": 2
     },
     {
       "id": 11,
