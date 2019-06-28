@@ -6,7 +6,7 @@ import {loadEvent, updateEvent, deleteEvent} from '../actions/events'
 class EventDetailsContainer extends React.Component {
 
   onDelete = () => {
-    this.props.deleteEvent(this.props.event.id)
+    this.props.deleteEvent(Number(this.props.match.params.id))
     this.props.history.push('/')
   }
 
@@ -22,6 +22,7 @@ class EventDetailsContainer extends React.Component {
 }
 
 const mapStateToProps = state => ({
+  events: state.events,
   event: state.event
 })
 

@@ -1,4 +1,4 @@
-import {EVENTS_FETCHED, EVENT_CREATE_SUCCESS} from '../actions/events'
+import {EVENTS_FETCHED, EVENT_CREATE_SUCCESS, EVENT_DELETE_SUCCESS} from '../actions/events'
 
 const reducer = (state = null, action = {}) => {
   switch(action.type) {
@@ -9,6 +9,8 @@ const reducer = (state = null, action = {}) => {
         ...state,
         action.event
       ]
+    case EVENT_DELETE_SUCCESS:
+      return state.filter(ev => ev.id !== action.id)
     default:
       return state
   }

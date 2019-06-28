@@ -13,46 +13,16 @@
       "description": "Can we has cheaseburgerz?"
     },
     {
-      "id": 5,
-      "name": "New Years Eve",
-      "date": "31-12-2022",
-      "description": "It's going to be wait for it."
-    },
-    {
-      "name": "Pedro",
-      "date": "0801197",
-      "description": "Super Awesome",
-      "id": 7
-    },
-    {
       "name": "Other",
       "date": "asdas",
       "description": "YESSSS",
       "id": 8
     },
     {
-      "name": "okidoki",
-      "date": "asdasd",
-      "description": "assdasd",
-      "id": 9
-    },
-    {
-      "name": "Pedro new Form",
-      "date": "asdasd",
-      "description": "asdasdadsadsa",
-      "id": 10
-    },
-    {
       "name": "newEvent",
       "date": "2020-01-01",
       "description": "sdasdad",
       "id": 11
-    },
-    {
-      "name": "asdasdadasdads",
-      "date": "1987-01-08",
-      "description": "asdad",
-      "id": 12
     }
   ],
   "comments": [
@@ -79,18 +49,6 @@
       "author": "Anna",
       "body": "Men are simple things. They can survive a whole weekend with only three things: beer, boxer shorts and batteries for the remote control.",
       "eventId": 3
-    },
-    {
-      "id": 7,
-      "author": "Leon",
-      "body": "People always told me be careful of what you do And dont go around breaking young girls' hearts And mother always told me be careful of who you love And be careful of what you do cause the lie becomes the truth.",
-      "eventId": 5
-    },
-    {
-      "id": 8,
-      "author": "Leo",
-      "body": "I like to wax my legs and stick the hair on my back. Why? Because it keeps my back warm. There's method in my madness.",
-      "eventId": 5
     },
     {
       "id": 9,

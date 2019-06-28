@@ -24,7 +24,7 @@ const eventFetched = event => ({
 
 const eventDelete = event => ({
   type: EVENT_DELETE_SUCCESS,
-  payload: event
+  id: event
 })
 
 export const loadEvents = () => (dispatch, getState) => {
@@ -66,7 +66,8 @@ export const deleteEvent = (id) => (dispatch) => {
   request
     .delete(`${baseUrl}/events/${id}`)
     .then(response => {
-      console.log('deleteEvent', response.body)
+      console.log('deleteEvent', response)
+      dispatch(eventDelete(id))
     })
     .catch(console.error)
 }
