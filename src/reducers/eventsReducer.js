@@ -17,6 +17,7 @@ const reducer = (state = null, action = {}) => {
           ? action.event
           : ev
         )
+        
     default:
       return state
   }

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import store from './store'
 import {Provider} from 'react-redux'
-import { Route } from 'react-router-dom'
-import EventListContainer from './components/EventListContainer'
-import EventDetailsContainer from './components/EventDetailsComponent'
+import Routes from './components/Routes'
+
 import './App.css'
 
 class App extends Component {
@@ -11,8 +10,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <Route path="/" exact component={EventListContainer} />
-          <Route path="/events/:id" component={EventDetailsContainer} />
+          <Routes />
         </div>
       </Provider>
     );
