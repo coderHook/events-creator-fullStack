@@ -1,12 +1,6 @@
 {
   "events": [
     {
-      "id": 1,
-      "name": "Codaisseur Demo Night",
-      "date": "30-07-2020",
-      "description": "This is the best demo night you have ever seen. It's a-m-a-z-i-n-g. Seriously. Lets make a dent in the universe."
-    },
-    {
       "id": 3,
       "name": "Cat-cuddling world record",
       "date": "09-09-2021",
@@ -23,27 +17,15 @@
       "date": "2020-01-01",
       "description": "sdasdad",
       "id": 11
+    },
+    {
+      "name": "Davids help solved!",
+      "date": "2020-01-01",
+      "description": "new event to try something",
+      "id": 12
     }
   ],
   "comments": [
-    {
-      "id": 1,
-      "author": "Eric",
-      "body": "After one look at this planet any visitor from outer space would say “I WANT TO SEE THE MANAGER.”",
-      "eventId": 1
-    },
-    {
-      "id": 3,
-      "author": "Billy",
-      "body": "I'm always relieved when someone is delivering a eulogy and I realise I'm listening to it.",
-      "eventId": 1
-    },
-    {
-      "id": 4,
-      "author": "Pete",
-      "body": "A good lawyer knows the law; a clever one takes the judge to lunch.",
-      "eventId": 1
-    },
     {
       "id": 5,
       "author": "Anna",

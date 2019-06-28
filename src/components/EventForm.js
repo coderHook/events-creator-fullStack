@@ -5,7 +5,7 @@ export default class EventForm extends Component {
   render() {
     return (
       <div className="form-style-6">
-          <h1>Create Your Event</h1>
+          <h1>{ this.props.editMode ? 'Edit' : 'Create'} Your Event</h1>
 
           <form onSubmit={(event) => this.props.onSubmit(event)}>
             <input type="text" name="name" placeholder="Name of the Event" 
@@ -22,7 +22,7 @@ export default class EventForm extends Component {
               onChange = {(event) => this.props.onChange(event)}>  
             </textarea>
 
-            <input type="submit" value="Add Event" />
+            <input type="submit" value={ this.props.editMode ? 'Edit Event' : 'Add Event'} />
 
           </form>
       </div>

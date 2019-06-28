@@ -4,6 +4,7 @@ export const EVENTS_FETCHED = 'EVENTS_FETCHED'
 export const EVENT_FETCHED = 'EVENT_FETCHED'
 export const EVENT_CREATE_SUCCESS = 'EVENT_CREATE_SUCCESS'
 export const EVENT_DELETE_SUCCESS = 'EVENT_DELETE_SUCCESS'
+export const EVENT_EDIT_SUCCESS = 'EVENT_EDIT_SUCCESS'
 
 const baseUrl = 'http://localhost:4000'
 
@@ -70,4 +71,17 @@ export const deleteEvent = (id) => (dispatch) => {
       dispatch(eventDelete(id))
     })
     .catch(console.error)
+}
+
+const editEvent = event => ({
+  type: EVENT_EDIT_SUCCESS,
+  event
+})
+
+export const updateEvent = (id, editedEvent) => (dispatch) => {
+  request
+    .patch(`${baseUrl}/events/${id}`)
+    .send(editedEvent)
+    .then(response => dispatch(editEvent(response.body)))
+    .catch(console.error )
 }

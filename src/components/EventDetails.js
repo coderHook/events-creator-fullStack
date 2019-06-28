@@ -11,11 +11,17 @@ export default class EventDetails extends Component {
         </p>
         <p className="cardcontent">{this.props.event.description}</p>
 
-        <div className="button_cont" align="center" onClick={() => this.props.onClick()}>
-          <span className="button_delete">
-            Delete Event
-          </span>
+        <div className="buttonsDiv">
+          <div className="button_cont" align="center" onClick={() => this.props.onClick()}>
+          <span className="button_delete">Delete Event</span>
+          </div>
+
+          <div className="button_cont" align="center" 
+              onClick={() =>this.props.editMode()}>
+            <span className="button_edit">Edit Event</span>
+          </div>
         </div>
+        
       </div>
     )
   }
